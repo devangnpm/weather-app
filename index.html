@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="weather-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content">
+        <h1>Weather App</h1>
+        <input type="text" id="locationInput" placeholder="Enter location">
+        <button id="fetchButton">Fetch Weather</button>
+        <div id="weatherData">
+            <p id="locationName"></p>
+            <p id="locationTemp"></p>
+        </div>
+    </div>
+</body>
+</html>
